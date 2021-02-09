@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Go to random NPC activity -->
+        <Button
+            android:id="@+id/button_npc"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/roundedcorners"
+            android:backgroundTint="@color/genColor"
+            android:contentDescription="Generate a random NPC"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_d20"
+            android:text="Generate Random NPC"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.694" />
+
+        <!-- Go to Random Loot Activity -->
+        <Button
+            android:id="@+id/button_merchant"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/roundedcorners"
+            android:backgroundTint="@color/genColor"
+            android:contentDescription="Generate a random Merchant"
+            android:drawableLeft="@drawable/ic_d20"
+            android:paddingLeft="10dp"
+            android:text="Generate Random Loot"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_npc"
+            app:layout_constraintVertical_bias="0.445" />
+
+        <!-- Logo image -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="378dp"
+            android:layout_height="403dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_npc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/npcspawnlogofw" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

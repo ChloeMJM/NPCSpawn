@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".RandomMerchant"
+    android:background="@color/bgColor">
+
+    <!-- Random Loot generation page -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <!-- Mundane 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_gen1m"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundedcorners"
+                    android:backgroundTint="@color/genColor"
+                    android:contentDescription="Reroll"
+                    android:drawableLeft="@drawable/ic_d20"
+                    android:onClick="genMundane1"
+                    android:paddingLeft="10dp"
+                    android:text="Mundane"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittext_gen1m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:hint="Mundane Item"
+                    android:textColorHint="@color/textLightColor"
+                    android:textColor="@color/textLightColor"
+                    android:inputType="textNoSuggestions|textMultiLine" />
+            </LinearLayout>
+
+            <!-- Mundane 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_gen2m"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundedcorners"
+                    android:backgroundTint="@color/genColor"
+                    android:contentDescription="Reroll"
+                    android:drawableLeft="@drawable/ic_d20"
+                    android:onClick="genMundane2"
+                    android:paddingLeft="10dp"
+                    android:text="Mundane"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittext_gen2m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:hint="Mundane Item"
+                    android:textColorHint="@color/textLightColor"
+                    android:textColor="@color/textLightColor"
+                    android:inputType="textNoSuggestions|textMultiLine" />
+            </LinearLayout>
+
+            <!-- Common 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_gen1c"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundedcorners"
+                    android:backgroundTint="@color/genColor"
+                    android:contentDescription="Reroll"
+                    android:drawableLeft="@drawable/ic_d20"
+                    android:onClick="genCommon2"
+                    android:paddingLeft="10dp"
+                    android:text="Common"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittext_gen1c"
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:hint="Common Item"
+                    android:textColorHint="@color/textLightColor"
+                    android:textColor="@color/textLightColor"
+                    android:inputType="textNoSuggestions|textMultiLine" />
+            </LinearLayout>
+
+
+            <!-- Common 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_gen2c"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundedcorners"
+                    android:backgroundTint="@color/genColor"
+                    android:contentDescription="Reroll"
+                    android:drawableLeft="@drawable/ic_d20"
+                    android:onClick="genCommon3"
+                    android:paddingLeft="10dp"
+                    android:text="Common"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittext_gen2c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:hint="Common Item"
+                    android:textColorHint="@color/textLightColor"
+                    android:textColor="@color/textLightColor"
+                    android:inputType="textNoSuggestions|textMultiLine" />
+            </LinearLayout>
+
+            <!-- Uncommon 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_gen1uc"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundedcorners"
+                    android:backgroundTint="@color/genColor"
+                    android:contentDescription="Reroll"
+                    android:drawableLeft="@drawable/ic_d20"
+                    android:onClick="genUncommon1"
+                    android:paddingLeft="10dp"
+                    android:text="Uncommon"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittext_gen1uc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:hint="Uncommon Item"
+                    android:textColorHint="@color/textLightColor"
+                    android:textColor="@color/textLightColor"
+                    android:inputType="textNoSuggestions|textMultiLine" />
+            </LinearLayout>
+
+            <!-- Rare 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_gen1r"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundedcorners"
+                    android:backgroundTint="@color/genColor"
+                    android:contentDescription="Reroll"
+                    android:drawableLeft="@drawable/ic_d20"
+                    android:onClick="genRare1"
+                    android:paddingLeft="10dp"
+                    android:text="Rare"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittext_gen1r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:hint="Rare Item"
+                    android:textColorHint="@color/textLightColor"
+                    android:textColor="@color/textLightColor"
+                    android:inputType="textNoSuggestions|textMultiLine" />
+            </LinearLayout>
+
+            <!-- Rare 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_gen2r"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundedcorners"
+                    android:backgroundTint="@color/genColor"
+                    android:contentDescription="Reroll"
+                    android:drawableLeft="@drawable/ic_d20"
+                    android:onClick="genRare2"
+                    android:paddingLeft="10dp"
+                    android:text="Rare"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittext_gen2r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:hint="Rare Item"
+                    android:textColorHint="@color/textLightColor"
+                    android:textColor="@color/textLightColor"
+                    android:inputType="textNoSuggestions|textMultiLine" />
+            </LinearLayout>
+
+            <!-- Very Rare 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_gen1vr"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundedcorners"
+                    android:backgroundTint="@color/genColor"
+                    android:contentDescription="Reroll"
+                    android:drawableLeft="@drawable/ic_d20"
+                    android:onClick="genVeryRare1"
+                    android:paddingLeft="10dp"
+                    android:text="Very Rare"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittext_gen1vr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:hint="Very Rare Item"
+                    android:textColorHint="@color/textLightColor"
+                    android:textColor="@color/textLightColor"
+                    android:inputType="textNoSuggestions|textMultiLine" />
+            </LinearLayout>
+
+            <!-- Wonderous 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_gen1w"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundedcorners"
+                    android:backgroundTint="@color/genColor"
+                    android:contentDescription="Reroll"
+                    android:drawableLeft="@drawable/ic_d20"
+                    android:onClick="genWonderous1"
+                    android:paddingLeft="10dp"
+                    android:text="Wonderous"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittext_gen1w"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:hint="Wonderous Item"
+                    android:textColorHint="@color/textLightColor"
+                    android:textColor="@color/textLightColor"
+                    android:inputType="textNoSuggestions|textMultiLine" />
+            </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Generate All -->
+        <Button
+            android:id="@+id/button_mgenerateall"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/roundedcorners"
+            app:backgroundTint="@color/genAllColor"
+            android:contentDescription="Generate all randomly generated fields."
+            android:drawableLeft="@drawable/ic_d20"
+            android:drawableRight="@drawable/ic_d20"
+            android:onClick="genAllMerch"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:radius="10dp"
+            android:text="Generate All"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

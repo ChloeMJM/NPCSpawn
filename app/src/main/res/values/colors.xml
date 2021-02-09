@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C53B09</color>
+    <color name="colorPrimaryDark">#E1450D</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="textLightColor">#FFFFFF</color>
+
+    <color name="genAllColor">#40798C</color>
+    <color name="genColor">#70A9A1</color>
+    <color name="addColor">#9EC1A3</color>
+    <color name="viewColor">#CFE0C3</color>
+    <color name="deleteColor">#C33C54</color>
+    <color name="bgColor">#1F363D</color>
+
+    <!-- Below code is commented out because they are color schemes that may be
+    implemented in the future for user selected themes -->
+
+    <!-- Original theme -->
+    <!--<color name="genAllColor">#17539C</color>
+    <color name="genColor">#00B2CA</color>
+    <color name="addColor">#7DCFB6</color>
+    <color name="viewColor">#F79256</color>
+    <color name="deleteColor">#D32F2F</color>
+    <color name="bgColor">#FAE9CC</color>-->
+
+    <!-- Dark theme -->
+    <!--<color name="genAllColor">#5C6B73</color>
+    <color name="genColor">#9DB4C0</color>
+    <color name="addColor">#C2DFE3</color>
+    <color name="viewColor">#E0FBFC</color>
+    <color name="deleteColor">#D32F2F</color>
+    <color name="bgColor">#253237</color>-->
+
+    <!-- Unicorn -->
+    <!--<color name="genAllColor">#90A8C3</color>
+    <color name="genColor">#ADA7C9</color>
+    <color name="addColor">#D7B9D5</color>
+    <color name="viewColor">#D7B9D5</color>
+    <color name="deleteColor">#D32F2F</color>
+    <color name="bgColor">#64A6BD</color>-->
+
+    <!-- Green -->
+    <!--<color name="genAllColor">#137547</color>
+    <color name="genColor">#2A9134</color>
+    <color name="addColor">#3FA34D</color>
+    <color name="viewColor">#5BBA6F</color>
+    <color name="deleteColor">#D32F2F</color>
+    <color name="bgColor">#054A29</color>-->
+
+    <!-- ice cream -->
+    <!--<color name="genAllColor">#AED9E0</color>
+    <color name="genColor">#B8F2E6</color>
+    <color name="addColor">#FAF3DD</color>
+    <color name="viewColor">#FFA69E</color>
+    <color name="deleteColor">#C33C54</color>
+    <color name="bgColor">#5E6472</color>-->
+
+</resources>

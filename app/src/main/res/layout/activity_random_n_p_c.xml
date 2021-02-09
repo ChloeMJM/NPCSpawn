@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="top"
+android:orientation="vertical"
+tools:context=".RandomNPC"
+android:background="@color/bgColor">
+
+    <!-- Random NPC Generation page -->
+
+    <!-- Scrollview allows for scrolling the page -->
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_view"
+                android:layout_width="235dp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/addColor"
+                android:contentDescription="View Saved NPCs."
+                android:drawableLeft="@drawable/ic_view"
+                android:text="View Saved NPCs"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="155dp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/viewColor"
+                android:contentDescription="Save NPC."
+                android:drawableLeft="@drawable/ic_save"
+
+                android:text="Save NPC"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Generate name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_genname"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/genColor"
+                android:contentDescription="Generate name."
+                android:drawableLeft="@drawable/ic_d20"
+                android:onClick="genName"
+                android:paddingLeft="10dp"
+                android:text="Name"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:hint="Name"
+                android:textColorHint="@color/textLightColor"
+                android:textColor="@color/textLightColor"
+                android:inputType="textNoSuggestions|textMultiLine" />
+        </LinearLayout>
+
+        <!-- Generate race -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_genrace"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/genColor"
+                android:contentDescription="Generate race."
+                android:drawableLeft="@drawable/ic_d20"
+                android:onClick="genRace"
+                android:paddingLeft="10dp"
+                android:text="Race"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_race"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:hint="Race"
+                android:textColorHint="@color/textLightColor"
+                android:textColor="@color/textLightColor"
+                android:inputType="textNoSuggestions|textMultiLine" />
+        </LinearLayout>
+
+        <!-- Generate gender and age -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_gender"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/genColor"
+                android:contentDescription="Generate gender."
+                android:drawableLeft="@drawable/ic_d20"
+                android:onClick="genGender"
+                android:paddingLeft="10dp"
+                android:text="Gender"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_gender"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:hint="Gender"
+                android:textColorHint="@color/textLightColor"
+                android:textColor="@color/textLightColor"
+                android:inputType="textNoSuggestions|textMultiLine" />
+
+            <Button
+                android:id="@+id/button_age"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/genColor"
+                android:contentDescription="Generate age."
+                android:drawableLeft="@drawable/ic_d20"
+                android:onClick="genAge"
+                android:paddingLeft="10dp"
+                android:text="Age"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_age"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:hint="Age"
+                android:textColorHint="@color/textLightColor"
+                android:textColor="@color/textLightColor"
+                android:inputType="textNoSuggestions|textMultiLine" />
+        </LinearLayout>
+
+        <!-- Generate physical quirk -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_physquirk"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/genColor"
+                android:contentDescription="Generate physical quirk."
+                android:drawableLeft="@drawable/ic_d20"
+                android:onClick="genPhysquirk"
+                android:paddingLeft="10dp"
+                android:text="Quirk"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_physquirk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:hint="Physical Quirk"
+                android:textColorHint="@color/textLightColor"
+                android:textColor="@color/textLightColor"
+                android:inputType="textNoSuggestions|textMultiLine" />
+        </LinearLayout>
+
+        <!-- Generate personality quirk -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_persquirk"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/genColor"
+                android:contentDescription="Generate personality quirk."
+                android:drawableLeft="@drawable/ic_d20"
+                android:onClick="genPersquirk"
+                android:paddingLeft="10dp"
+                android:text="Quirk"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_persquirk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:hint="Personality Quirk"
+                android:textColorHint="@color/textLightColor"
+                android:textColor="@color/textLightColor"
+                android:inputType="textNoSuggestions|textMultiLine" />
+        </LinearLayout>
+
+        <!-- Generate plot -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_plot"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/genColor"
+                android:contentDescription="Generate plot hook."
+                android:drawableLeft="@drawable/ic_d20"
+                android:onClick="genPlot"
+                android:paddingLeft="10dp"
+                android:text="Plot"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_plot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:hint="Optional Plot Hook"
+                android:textColorHint="@color/textLightColor"
+                android:textColor="@color/textLightColor"
+                android:inputType="textNoSuggestions|textMultiLine" />
+        </LinearLayout>
+
+
+    <!-- Constraint layout for generate all and previous -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <Button
+                android:id="@+id/button_generateall"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/genAllColor"
+                android:contentDescription="Generate all randomly generated fields."
+                android:drawableLeft="@drawable/ic_d20"
+                android:drawableRight="@drawable/ic_d20"
+                android:onClick="genAll"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:radius="10dp"
+                android:text="Generate All"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/genColor"
+                android:drawableRight="@drawable/ic_d20"
+                android:onClick="back"
+                android:paddingRight="10dp"
+                android:text="Previous"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
