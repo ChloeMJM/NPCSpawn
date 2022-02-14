@@ -7,4 +7,5 @@ The NPC generation provides the same quick and easy generation with the click of
 
 ## Notes:
 NPCSpawn has a minimum target API of 26. 
+
 NPCSpawn is free to download and enjoy. 
