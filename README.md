@@ -5,6 +5,6 @@ NPC Spawn provides two resources for Dungeon Masters: random non-player characte
 
 The NPC generation provides the same quick and easy generation with the click of one button, but also provides the user the ability to save and modify NPCs for future use. Each of these fields, in both the NPC and loot generation activities, can be regenerated independently or as a group as many times as the user desires until they are happy with the result.
 
-##Notes:
+## Notes:
 NPCSpawn has a minimum target API of 26. 
 NPCSpawn is free to download and enjoy. 
