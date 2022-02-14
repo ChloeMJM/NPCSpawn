@@ -1,5 +1,5 @@
 ## Hello and welcome to NPCSpawn!
-NPC Spawn is a world building application for tabletop role playing games. Developed for android, this application is meant to aid D&D Dungeon Masters as a quick and easy reference for generating random non-player characters (NPCs) as well as random item (loot) generation. 
+NPC Spawn is a world building application for tabletop role playing games. Developed for Android, this application is meant to aid D&D Dungeon Masters as a quick and easy reference for generating random non-player characters (NPCs) as well as random item (loot) generation. 
 
 NPC Spawn provides two resources for Dungeon Masters: random non-player character generation as well as random item (loot) generation. The loot generation is a simple interface that contains all items available as part of the Opening Gaming License (OGL) as provided by the Wizards of the Coast Systems Reference Document (SRD). The items have been categorized based on rarity so that with the click of one button, the Dungeon Master can randomly generate a page full of items to delegate to the party as they see fit. 
 
